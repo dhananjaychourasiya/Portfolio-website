@@ -1,0 +1,608 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap'); */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Adding all my Section tag fixed padding */
+
+section{
+    padding: 80px;
+}
+
+/* Creating banner area and css */
+.banner{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    background: url(images/image80.jpg);
+    background-size: cover;
+    background-position: right center;
+
+}
+
+.banner h2{
+    font-size: 2.5em;
+    color: #444;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.banner h2 span{
+    font-size: 1.2em;
+    color:#fff ;
+}
+
+.banner h3{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.btn{
+    position: relative;
+    background: yellowgreen;
+    display: inline-block;
+    color: #000;
+    margin-top: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    /* font-size: 1.5em; */
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    /* margin: 50px; ; */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #111;
+}
+
+.heading p{
+    font-style: italic;
+    font-size: 14px;
+    /* margin-top: 10px; */
+}
+
+.heading h2{
+    font-size: 3em;
+    color:yellowgreen;
+}
+
+/* this below not working */
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBx{
+    justify-content: center;
+}
+
+.proPic{
+    width: 190px;
+    height: 210px;
+    margin-left: 20%;
+    /* margin: 20%; */
+    border-radius: 30%;
+    /* border-top-left-radius: 30%;
+    border-bottom-right-radius: 30%; */
+}
+
+.contentBx h2{
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.heading .bottom{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bt{
+    margin-top: 20px;
+}
+
+/* this below not working */
+.btn .round{
+    border-radius: 50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+}
+
+.w50{
+    min-width: 25%;
+    padding: 0px 0px 0 0;
+}
+img{
+    max-width: 100%;
+}
+
+/* Creating Menu Tab & Logos at Top Using HTML */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+header .logo{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+
+}
+
+header ul li{
+    list-style-type: none;
+    position: relative;
+}
+
+header ul li a{
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Creating sticky header menu nav bar in css */
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #111;
+}
+
+/* Designing services layout in CSs */
+
+.services{
+    background: #111;
+}
+
+.heading.white p{
+    color: #fff;
+}
+
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.services .content .servicesBx{
+    color: #fff;
+    background: #111;
+    margin: 10px 15px;
+    padding:30px 15px ;
+    max-width: 360px;
+}
+
+.services .content .servicesBx:hover{
+    border-bottom: 2px solid plum;
+    cursor: pointer;
+
+}
+
+.services .content .servicesBx .fa{
+    color: greenyellow;
+    padding-bottom: 10px;
+}
+.services .content .servicesBx .fab{
+    color: greenyellow;
+    padding-bottom: 10px;
+
+}
+
+.work .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.work .content .workBx{
+    width: 500px;
+    padding: 20px;
+}
+
+.work .content .workBx img{
+    max-width: 100%;
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+.work .content .workBx img:hover{
+    box-shadow: 0 0 20px 5px #ccc ;
+    transform: scale(1.008);
+    transition: 0.5s;
+}
+
+
+.work .content .workBx p{
+text-align: center;
+}
+
+.work .content .workBx a:link,
+.work .content .workBx a:visited,
+.work .content .workBx a:active
+{
+    color: #161616;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+.testimonial{
+    background: #111;
+}
+
+.testimonial .content{
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.testimonial .content .testimonialBx{
+    background-color: #000;
+    margin: 20px;
+    padding: 40px 40px;
+    max-width: 40%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    cursor: pointer;
+    /* border-width: 20px; */
+}
+.testimonial .content .testimonialBx:hover{
+    border-bottom: 2px solid greenyellow;
+
+}
+
+
+.testimonial .content .testimonialBx p{
+    color: #fff;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 24px;
+
+}
+
+.testimonial .content .testimonialBx h3{
+    color: yellowgreen;
+    margin-top: 20px;
+    text-align: end;
+    font-weight: 200;
+    line-height: 20px;
+    font-style: italic;
+    line-height: 1.7em;
+    font-size: 20px;
+}
+
+
+/* Design Content Layout in CSS */
+
+.contact{
+    background:#111;
+}
+
+.contact .heading h3{
+    color: yellowgreen;
+    font-size: 40px;
+}
+
+.formBx{
+    min-width: 60%;
+}
+
+.formBx form{
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx form h3,
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formBx form input,
+.formBx form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: #161616;
+    color: white;
+    resize: vertical;
+}
+
+.formBx form input:focus,
+.formBx form textarea:focus{
+    /* cursor: pointer; */
+    border-bottom: 1px solid greenyellow;
+    transition: 0.5s;
+}
+
+.formBx form input[type="submit"]{
+    background: greenyellow;
+    color: black;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    max-width: 250px;
+    letter-spacing: 2px;
+}
+
+.contactInfo {
+    min-width: 40%
+}
+
+.contactInfo p{
+    color: #999;
+}
+
+.contactInfoBx{
+    position: relative;
+}
+
+.contactInfoBx .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.contactInfoBx .box .icon{
+    color: #999;
+    min-height: 40px;
+    padding-top: 4px;
+    /* padding-right: 10px; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+
+}
+
+.contactInfoBx .box .text{
+    color: #999;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+.contactInfoBx .box .text h3{
+    color: greenyellow;
+    font-weight: 500;
+    /* margin: 0; */
+}
+
+
+.contactInfoBx .box .text p, address{
+    font-style: normal;
+    font-weight: 300;
+    color: #999;
+}
+
+.contactInfoBx .boxSocial{
+    display: flex;
+    flex-direction: row;
+    /* padding-left: 20px; */
+    letter-spacing: 15px;
+ 
+}
+
+.contactInfoBx .boxSocial .fab{
+    font-size: 25px;
+    color: greenyellow;
+    /* cursor: pointer; */
+}
+
+.copyright{
+    background: greenyellow;
+    text-align: center;
+}
+
+/* Making Responsive Layout */
+@media (max-width:991px){
+    header,
+    header .sticky{
+        padding: 20px 50px;
+        z-index: 2;
+    }
+    header .menu{
+        display: none;
+        z-index: 1;
+    }
+
+    header .menu{
+        position: fixed;
+        background: white ;
+        /* color: whitesmoke; */
+        display: block;
+        top: 65px;
+        left: -100%;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0,0.2);
+        transition: 0.5s;
+    }
+
+    header .menu .active{
+        position: fixed;
+        background: white ;
+        /* color: whitesmoke; */
+        display: block;
+        top: 65px;
+        left: 0;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        /* border-top: 1px solid rgba(0,0,0,0.2); */
+    }
+
+
+    header ul li a{
+        font-size: 20px;
+        color: #111;
+        font-weight: 400;
+        margin: 10px 0;
+    }
+
+    .toggle{
+        width: 40px;
+        height: 20px;
+        background-image: url(images/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle .active{
+        width: 40px;
+        height: 40px;
+        background-image: url(images/close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+
+    header .sticky .toggle{
+        filter: invert(1);
+        -webkit-filter:invert(1);
+    }
+
+    section{
+        padding: 100px 30px;
+    }
+
+    .banner{
+        padding: 150px 50px 100px;
+    }
+
+    .banner h2{
+        font-size: 1.5em;
+    }
+
+    .banner h3{
+        font-size: 1em;
+    }
+
+
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+    }
+
+    .textBx{
+        position: relative;
+        top: 170px;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .contentBx{
+        padding: 0;
+    }
+
+    .content .w50 img{
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+
+    .contentBx h2{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .contentBx h3{
+        font-size: 20px;
+        /* font-weight: ; */
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width : 768px){
+    .testimonial .content .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 30px;
+    }
+
+    .heading .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+
+@media (max-width : 600px){
+    .testimonial .content .testimonialBx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 30px;
+    }
+
+    .heading .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
